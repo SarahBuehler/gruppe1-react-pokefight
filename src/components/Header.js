@@ -1,7 +1,7 @@
 import React from "react";
 import pokeball from "../media/pokeball.png";
 import "./components.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,8 +12,15 @@ function Header() {
         <img src={pokeball} alt="pokeball" className="pokeball-icon" />
       </div>
       <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/">Alle Pokemons</Link>
+        <NavLink className="myActive" to="/">
+          home
+        </NavLink>
+        <NavLink className="myActive" to="/test">
+          test
+        </NavLink>
+        <NavLink to="/about" className="myActive">
+          about
+        </NavLink>
       </nav>
     </div>
   );
