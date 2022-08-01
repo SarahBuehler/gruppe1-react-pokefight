@@ -7,12 +7,14 @@ import Home from "../components/Home";
 
 function Main() {
   return (
-    <div className="main">
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/test" element={<Test />} />
-      </Routes>
+    <div className="container">
+      <div className="main">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/test" element={<Test />} />
+        </Routes>
+      </div>
     </div>
   );
 }

@@ -31,7 +31,7 @@ a.active.myActive {
 
 .poke-list {
   column-count: 3;
-  list-style:decimal
+  list-style: decimal;
 }
 
 .navbar {
@@ -47,10 +47,16 @@ h1 {
   text-transform: uppercase;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   text-align: center;
   font-size: 2rem;
   min-height: 50vh;
+  width: 80%;
 }
 
 .pokeball-icon {
