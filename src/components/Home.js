@@ -5,12 +5,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = () => {
-    fetch("../media/pokedex.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
+    fetch("./data/pokedex.json")
       .then((response) => {
         return response.json();
       })
@@ -28,9 +23,9 @@ const Home = () => {
     <div>
       {isLoading && <p>Loading ...</p>}
       {pokemons.length > 0 && (
-        <ul>
+        <ul className="poke-list">
           {pokemons.map((pokemon) => (
-            <li key={pokemon.id}>{pokemon.name}</li>
+            <li key={pokemon.id}>{pokemon.name.english}</li>
           ))}
         </ul>
       )}

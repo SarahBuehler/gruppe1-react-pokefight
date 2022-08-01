@@ -29,6 +29,11 @@ a.active.myActive {
   text-shadow: blue 0.1em 0.1em 0.2em;
 }
 
+.poke-list {
+  column-count: 3;
+  list-style:decimal
+}
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
