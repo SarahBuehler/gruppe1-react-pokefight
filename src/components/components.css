@@ -7,6 +7,7 @@
 .header {
   text-align: center;
   font-size: 3rem;
+  letter-spacing: 0.2rem;
 }
 
 .header h1 {
@@ -29,6 +30,12 @@ a.active.myActive {
   text-shadow: blue 0.1em 0.1em 0.2em;
 }
 
+.btn-language {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 3rem;
+}
 .poke-list {
   column-count: 3;
   list-style: decimal;
