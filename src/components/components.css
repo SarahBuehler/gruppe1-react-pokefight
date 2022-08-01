@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+
+* {
+  font-family: "Mouse Memoirs", sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-size: 3rem;
+}
+.header-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar > p {
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.main {
+  text-align: center;
+  font-size: 2rem;
+  min-height: 50vh;
+}
+
+.pokeball-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.footer {
+  font-size: 1.5rem;
+}
